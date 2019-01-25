@@ -1,0 +1,27 @@
+<ion-view view-title='推荐' ios-view class="recommand"  hide-tabs="false" ios-banner-fit>
+  <ion-content class="recommandContent">
+    <div class="gWrapper">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true"
+        slide-interval=2000 show-pager="true" pager-click="pageClick(index)"
+        active-slide="0" delegate-handle="delegateHandler">
+          <ion-slide ng-repeat='item in items track by $index'>
+            <div class="box" >
+              <img ng-src="{{item.picUrl}}" ng-click="toDetailUrl(item.url)">
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+    </div>
+    <div class="listContent">
+        <div class="itemWrapper" ng-repeat='sitem in dataList track by $index'>
+          <div class="singPic">
+            <img ng-src="{{sitem.imgUrl}}" alt="" />
+          </div>
+          <div class="singCon" ng-click='goBookDetail()'>
+            <p class="titleCon">{{sitem.title}}</p>
+            <p class="singContent">{{sitem.content}}</p>
+            <p class="author">{{sitem.author}}</p>
+          </div>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

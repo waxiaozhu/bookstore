@@ -1,0 +1,14 @@
+<ion-tabs view-title='详情' class="tabs-icon-top tabs-color-active-positive tabBook bookDetailTab">
+  <!-- 评论 -->
+  <ion-tab title="评论" icon-off="icon-infooff" icon-on="icon-infoon" href="#/detail/comment">
+    <ion-nav-view name="bookdetail-comment"></ion-nav-view>
+  </ion-tab>
+  <!-- 买纸书 -->
+  <ion-tab title="买纸书" icon-off="icon-commentbookoff" icon-on="icon-commentbookon" ng-click="buyBook()">
+    <!-- <ion-nav-view name="tab-dynamic"></ion-nav-view> -->
+  </ion-tab>
+  <!--读电子书-->
+  <ion-tab title="读电子书" icon-off="icon-elebookoff" icon-on="icon-elebookon" ng-click='readBook()'>
+    <!-- <ion-nav-view name="tab-store"></ion-nav-view> -->
+  </ion-tab>
+</ion-tabs>

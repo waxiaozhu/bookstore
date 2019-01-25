@@ -1,0 +1,71 @@
+<ion-view ios-view view-title='个人中心' class='personCenter' hide-tabs='false' ios-banner-fit>
+  <ion-content class='personWrapper' has-bouncing='false' scroll='false'>
+    <div class="ImgP">
+      <div class="perImg">
+        <img ng-src="../../images/tempImages/you.jpg" alt="" />
+      </div>
+      <div class="pInfo">
+        <p class="pInfoName">爱读书的小良</p>
+        <p class="pScore"><span>2500</span><span>积分</span></p>
+      </div>
+      <div class="pAction">
+        <div class="pSign" ng-click='signhere()'>
+                    签到
+        </div>
+      </div>
+    </div>
+    <div class="focusAndFans">
+      <div class="focus" ng-click='goToFocus()'>
+        <p class="focusNum">78</p>
+        <p class="omyFocus">我的关注</p>
+      </div>
+      <div class="fans">
+        <p class="fansNum">78</p>
+        <p class="omyFans">我的粉丝</p>
+      </div>
+    </div>
+    <div class="goAnyWhere">
+      <span class="omCard oCommentInfo"></span><span class="oTitle">评论消息</span>
+    </div>
+    <div class="goAnyWhere">
+      <span class="omCard oMCollection"></span><span class="oTitle">我的收藏</span>
+    </div>
+    <div class="goAnyWhere">
+      <span class="omCard oMChat"></span><span class="oTitle">私信聊天</span>
+    </div>
+  </ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <div class="bg-shadow"></div>
+  <div class="modal signModal">
+    <ion-content class='signCon' has-bouncing='false' scroll='false'>
+      <div class="sModal">
+        <span class="sShutdown" ng-click='shutdownModal()'></span>
+        <div class="sModalCon">
+          <div class="sc01">
+            <img ng-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548237515986&di=3c0f39aa0cdebfd658a70b410bfb2009&imgtype=0&src=http%3A%2F%2Fpic2.16pic.com%2F00%2F07%2F66%2F16pic_766111_b.jpg"/>
+            <div class="sc0101">
+              <p class="signNumTitle">已连续签到</p>
+              <p class="signNum"><span>02</span>天</p>
+              <div class="calcNum">
+                <p class="calcNumU"><span>2019</span>/<span>01</span></p>
+                <p class="calcNumD">05</p>
+              </div>
+            </div>
+          </div>
+          <div class="sc02">
+            <p>创业是一回事，</p>
+            <p>创建你真正热爱的事业，</p>
+            <p>并过上自己中意的生活，</p>
+            <p>则是另外一会事。</p>
+            <p style='color: #a8a7ad;'>-----摘自《浪潮式发售》</p>
+          </div>
+          <div class="sc03">
+            <span>分享</span>
+          </div>
+        </div>
+      </div>
+    </ion-content>
+  </div>
+</script>

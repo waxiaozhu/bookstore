@@ -1,0 +1,22 @@
+.tabBook .tabs .tab-item .icon {
+  color: #343434;
+  font-size: 24px;
+  height: 24px;
+  margin-top: 5px; }
+
+.tabBook .tabs .tab-item .tab-title {
+  font-size: 12px;
+  font-family: SourceHanSansSC-regular;
+  color: #a8a7ad; }
+
+.tabBook .tabs .tab-item.tab-item-active .tab-title {
+  color: #5ea750; }
+
+.tabBook .tabs .tab-item.tab-item-active .icon {
+  color: #5ea750; }
+
+.tabBook .tabs .tab-item.activated .tab-title {
+  color: #5ea750; }
+
+.tabBook .tabs .tab-item.activated .icon {
+  color: #5ea750; }

@@ -1,0 +1,88 @@
+<ion-view view-title='动态' ios-view class="dynamic" hide-tabs="false" ios-banner-fit>
+  <ion-content class="dynamicWrapper" has-bouncing='false' scroll='false' overflow-scroll='true'>
+    <div class="bar">
+      <div class="subTitleName" ng-repeat='item in navList track by $index' ng-click='navSelect($index)'>
+        <div class="nav-title" ng-class="{on: $index == defaultPageIndex}"><span class="aLine"></span>{{navList[$index].name}}</div>
+      </div>
+    </div>
+    <ion-content class="content has-header" has-bouncing="true" scroll='true' scrollbar-y="false" overflow-scroll="true">
+      <!--<ion-refresher on-refresh="doRefresh()"></ion-refresher>-->
+      <ion-slide-box on-slide-changed="slideHasChanged($index)" active-slide="0" delegate-handle="delegateHandler" show-pager="false">
+        <ion-slide ng-repeat="item in navList track by $index">
+          <div class="itemWrapper" ng-repeat="item in [1,2,3,4,6,7,8,9,10,11,12,13]" ng-click="detailAction(item)">
+            <div class="itemWrapperContent">
+              <div class="focusLeft">
+                <span class="ImgWrapper" ng-click='goSinglePage()'>
+                    <img ng-src="../../images/tempImages/head.jpg" alt="" />
+                </span>
+              </div>
+              <div class="focusRight">
+                <div class="pInfo">
+                  <div class="pNameW">
+                    <p class="pname">良哥</p>
+                    <p class="ptime">10-16 14:21</p>
+                  </div>
+                  <div class="pPraise">
+                    <span class="pPraiseNum">12w+</span>
+                    <span class="pPraiseFinger" ng-click='toPraise()' ng-class='{"active": isPraised}'></span>
+                  </div>
+                </div>
+                <div class="pInfoCon">
+                  <p class="pInfoConn" on-hold='toCopy($event)' ng-click='toComment($event)'>这是一条热门评论这是一条热门评论论这是一条热门评论这是一条热门评论这是一条热门评论是一条热门评论这是一条热门评论</p>
+                  <div class="praisedComment">
+                    <div class="praisedCommentWrapper">
+                      <p class="pcwCon"><span class="oname">华仔：</span>二十多年来，A股一直都是散户市，至今都没</p>
+                    </div>
+                    <div class="bookComment">
+                      <div class="bookCommentImg">
+                        <img ng-src="../../images/tempImages/book3.jpg" alt="" />
+                      </div>
+                      <div class="bCommentInfo">
+                        <p class="bShortInfo">健康来源与生活</p>
+                        <p class="bShortAuthor">张晓晓</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+     <!--<ion-infinite-scroll ng-if="enableLoadMore" immediate-="false" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>-->
+     <ion-infinite-scroll immediate-="false" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+    </ion-content>
+  </ion-content>
+</ion-view>
+
+<script id="my-popover.html" type="text/ng-template">
+  	<ion-popover-view ios-view class='myPopover fit'>
+      <ion-content class='popoverCon' scroll='false'>
+        <div class="opWrapper">
+          <span class="opImg opImg01"></span>
+          <span class="opBehavor" ng-click='opClick("copy")'>复制</span>
+        </div>
+        <div class="opWrapper">
+          <span class="opImg opImg02"></span>
+          <span class="opBehavor" ng-click='opClick("warn")'>举报</span>
+        </div>
+        <div class="opWrapper">
+          <span class="opImg opImg03"></span>
+          <span class="opBehavor" ng-click='opClick("del")'>删除</span>
+        </div>
+      </ion-content>
+    </ion-popover-view>
+</script>
+
+<script id="my-comment.html" type="text/ng-template">
+	<ion-modal-view class='commentView'>
+    <ion-content class="commentCon" scroll='false' ng-click='closeShadow($event)'>
+      <div class="inputWrapp">
+        <textarea class="shuru" type="text" placeholder="回复@路人甲"></textarea>
+        <div class="sendInfo">
+          <span ng-click='sendInfo($event)'>发送</span>
+        </div>        
+      </div>
+    </ion-content>
+  </ion-modal-view>
+</script>

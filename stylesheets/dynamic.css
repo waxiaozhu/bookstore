@@ -1,0 +1,248 @@
+.dynamic .dynamicWrapper {
+  background: #f8f8f8; }
+  .dynamic .dynamicWrapper .bar {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .dynamic .dynamicWrapper .bar .subTitleName {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center;
+      font-size: 16px;
+      line-height: 34px;
+      color: #343434; }
+      .dynamic .dynamicWrapper .bar .subTitleName .nav-title {
+        position: relative; }
+        .dynamic .dynamicWrapper .bar .subTitleName .nav-title.on {
+          color: #5ea750; }
+          .dynamic .dynamicWrapper .bar .subTitleName .nav-title.on .aLine {
+            background: #5ea750; }
+        .dynamic .dynamicWrapper .bar .subTitleName .nav-title .aLine {
+          position: absolute;
+          height: 3px;
+          width: 20px;
+          background: #ffffff;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          bottom: -3px; }
+  .dynamic .dynamicWrapper .content .scroll {
+    width: 100%;
+    height: 100%; }
+    .dynamic .dynamicWrapper .content .scroll .slider {
+      width: 100%;
+      height: 100%;
+      overflow: visible; }
+      .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide {
+        height: auto; }
+        .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper {
+          width: 100%;
+          background: #FFFFFF;
+          margin-top: 10px; }
+          .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-direction: normal;
+            -webkit-box-orient: horizontal;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            padding: 10px 3vw 10px 0px; }
+            .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusLeft {
+              padding: 0 3vw 0 3vw; }
+              .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusLeft .ImgWrapper {
+                display: block;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid #BBBBBB; }
+                .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusLeft .ImgWrapper > img {
+                  border: none;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%; }
+            .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight {
+              -webkit-box-flex: 1;
+              -webkit-flex: 1;
+              -moz-box-flex: 1;
+              -moz-flex: 1;
+              -ms-flex: 1;
+              flex: 1;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -moz-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-direction: normal;
+              -webkit-box-orient: vertical;
+              -webkit-flex-direction: column;
+              -moz-flex-direction: column;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              -moz-justify-content: center;
+              justify-content: center; }
+              .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -moz-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-direction: normal;
+                -webkit-box-orient: horizontal;
+                -webkit-flex-direction: row;
+                -moz-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                align-items: center;
+                width: 100%; }
+                .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pNameW {
+                  -webkit-box-flex: 1;
+                  -webkit-flex: 1;
+                  -moz-box-flex: 1;
+                  -moz-flex: 1;
+                  -ms-flex: 1;
+                  flex: 1; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pNameW .pname {
+                    color: #101010;
+                    font-size: 14px;
+                    text-align: left;
+                    font-family: SourceHanSansSC-regular; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pNameW .ptime {
+                    margin-top: 4px;
+                    font-size: 12px;
+                    color: #ACACAC;
+                    text-align: left;
+                    font-family: SourceHanSansSC-regular; }
+                .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pPraise {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -moz-box;
+                  display: -moz-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-direction: normal;
+                  -webkit-box-orient: horizontal;
+                  -webkit-flex-direction: row;
+                  -moz-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  -webkit-align-items: center;
+                  -moz-align-items: center;
+                  align-items: center; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pPraise .pPraiseNum {
+                    color: #acacac;
+                    font-size: 14px;
+                    font-family: SourceHanSansSC-regular;
+                    text-align: left;
+                    margin-top: 3px; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pPraise .pPraiseFinger {
+                    width: 24px;
+                    height: 24px;
+                    background: url("../images/svg/praiseoff.svg") center center;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat; }
+                    .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfo .pPraise .pPraiseFinger.active {
+                      background: url("../images/svg/praiseon.svg") center center;
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat; }
+              .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .pInfoConn {
+                color: #101010;
+                font-size: 14px;
+                text-align: left;
+                font-family: SourceHanSansSC-regular;
+                line-height: 20px; }
+              .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment {
+                width: 100%;
+                background: #f5fbfa;
+                padding: 16px 20px 16px 13px; }
+                .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .praisedCommentWrapper {
+                  line-height: 16px; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .praisedCommentWrapper .pcwCon {
+                    color: #a8a7ad;
+                    font-size: 14px; }
+                    .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .praisedCommentWrapper .pcwCon .oname {
+                      color: #343434; }
+                .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .bookComment {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -moz-box;
+                  display: -moz-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-direction: normal;
+                  -webkit-box-orient: horizontal;
+                  -webkit-flex-direction: row;
+                  -moz-flex-direction: row;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  margin-top: 10px; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .bookComment .bookCommentImg {
+                    box-sizing: content-box; }
+                    .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .bookComment .bookCommentImg > img {
+                      width: 34px;
+                      height: 50px; }
+                  .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .bookComment .bCommentInfo {
+                    -webkit-box-flex: 1;
+                    -webkit-flex: 1;
+                    -moz-box-flex: 1;
+                    -moz-flex: 1;
+                    -ms-flex: 1;
+                    flex: 1;
+                    padding: 6px 0px 8px 13px; }
+                    .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .bookComment .bCommentInfo .bShortInfo {
+                      color: #343434;
+                      width: 100%;
+                      -ms-text-overflow: ellipsis;
+                      text-overflow: ellipsis;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      font-size: 14px; }
+                    .dynamic .dynamicWrapper .content .scroll .slider .slider-slides .slider-slide .itemWrapper .itemWrapperContent .focusRight .pInfoCon .praisedComment .bookComment .bCommentInfo .bShortAuthor {
+                      color: #a8a7ad;
+                      width: 100%;
+                      -ms-text-overflow: ellipsis;
+                      text-overflow: ellipsis;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      font-size: 12px;
+                      margin-top: 10px; }

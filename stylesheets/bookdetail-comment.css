@@ -1,0 +1,127 @@
+.detailCommentWrapper .detailComment {
+  background: #F7F8FA; }
+  .detailCommentWrapper .detailComment .scroll {
+    width: 100%;
+    height: 100%; }
+    .detailCommentWrapper .detailComment .scroll .dcContent {
+      width: 100%;
+      height: 100%; }
+      .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader {
+        background: #FFFFFF;
+        padding: 15px 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderL {
+          -webkit-box-flex: 0 0 46px;
+          -webkit-flex: 0 0 46px;
+          -moz-box-flex: 0 0 46px;
+          -moz-flex: 0 0 46px;
+          -ms-flex: 0 0 46px;
+          flex: 0 0 46px;
+          height: 76px; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderL > img {
+            width: 100%;
+            height: 100%; }
+        .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderM {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -moz-box-flex: 1;
+          -moz-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          padding-left: 14px;
+          text-align: left; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderM .dcHTitle {
+            color: #343434;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 3px 0px 5px 0px;
+            margin-top: 3px;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderM .dcHAuthor {
+            color: #a8a7ad;
+            font-size: 14px;
+            padding: 5px 0px 5px 0px;
+            margin-top: 5px; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderM .dcHManager {
+            display: inline-block;
+            background: #dbecd8;
+            color: #5ea750;
+            font-size: 12px;
+            margin-top: 5px;
+            padding: 3px 10px;
+            border-radius: 2px;
+            letter-spacing: 2px; }
+        .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderR {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          justify-content: center; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderR .dcCollection {
+            font-size: 14px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: #FFFFFF;
+            background: #5ea750; }
+            .detailCommentWrapper .detailComment .scroll .dcContent .dcHeader .dcHeaderR .dcCollection.collected {
+              background: #828c99; }
+      .detailCommentWrapper .detailComment .scroll .dcContent .commentWord {
+        margin-top: 0.26667rem;
+        background: #FFFFFF;
+        padding: 0 13px 16px 13px; }
+        .detailCommentWrapper .detailComment .scroll .dcContent .commentWord .commentWordTitle {
+          padding: 16px 0px;
+          width: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-direction: normal;
+          -webkit-box-orient: horizontal;
+          -webkit-flex-direction: row;
+          -moz-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          border-bottom: 1px solid #E8E8E8; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .commentWord .commentWordTitle .comLine {
+            display: block;
+            width: 3px;
+            height: 16px;
+            background: #5ea750; }
+          .detailCommentWrapper .detailComment .scroll .dcContent .commentWord .commentWordTitle .comWord {
+            color: #343434;
+            font-weight: bold;
+            font-size: 16px;
+            padding-left: 9px; }
+        .detailCommentWrapper .detailComment .scroll .dcContent .commentWord .commentWordCon {
+          padding-top: 10px;
+          font-size: 14px;
+          line-height: 22px; }

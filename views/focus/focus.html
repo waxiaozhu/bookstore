@@ -1,0 +1,18 @@
+<ion-view class='myFocusWrapper' view-title='我的关注'>
+  <ion-content class='myFocusCon' has-bouncing='true' scroll='true'>
+    <div class="conWrapper">
+      <div class="singleWrapper" ng-repeat='item in [1,2,3,4,5] track by $index'>
+        <div class="authorMg">
+        	<img ng-src="../../images/tempImages/litt.jpg" />
+        </div>
+        <div class="authorInfo">
+        	<div class="focusAuthor">吴飞</div>
+        	<div class="focusSign">这个人很忙，还没有写个人的签名！</div>
+        </div>
+        <div class="authorBehavor" ng-class='{"focued": isFocus}' ng-click='clickFocus()'>
+        	<span class="authorService">{{FocusText}}</span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

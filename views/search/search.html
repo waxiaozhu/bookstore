@@ -1,0 +1,38 @@
+<ion-view class='searchWrapper' view-title='搜索'>
+  <div class="bar bar-header item-input-inset searchHeader">
+    <label class="item-input-wrapper searchLabel">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" placeholder="请输入搜索内容">
+    </label>
+    <button class="button button-clear searchBookBtn" ng-click='searchBook()'>
+            搜索
+    </button>
+  </div>
+  <ion-content class='has-header searchContent' has-bouncing='true'>
+    <div class="hotAndHistory">
+      <div class="seachCHot">
+      	<p class="seachCHotTitle">热门搜索</p>
+      	<div class="searchHotCon">
+      	  <span class="sspanWrap" ng-repeat='item in hotSearch track by $index'>
+      	    <span class="singleHot sspan">
+              {{item.name}}
+            </span>
+      	  </span>
+      	</div>
+      </div>
+      <div class="searchCHistory">
+      	<p class="searchCHistoryTitle">历史搜索</p>
+      	<div class="searchHisCon">
+      	  <span class="sspanWrap" ng-repeat='item in historySearch track by $index'>
+      	    <span class="singleHistory sspan">
+              {{item.name}}
+            </span>
+      	  </span>
+      	</div>
+      	<div class='delHistory'>
+      	  <span>清除历史记录</span>
+      	</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

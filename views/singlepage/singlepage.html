@@ -1,0 +1,67 @@
+<ion-view class='singlepageWrapper' view-title=''>
+  <ion-content class='singlepageCon' has-bouncing='true' scroll='true'>
+    <div class="spCon">
+    	<div class="spheaderWrapper">
+    	  <div class="spUp">
+    	    <div class="sp_header">
+    	      <img src="../../images/tempImages/my.jpg"/>
+    	      <span class="sp_sex">
+    	        <img ng-src="../../images/svg/girl.svg"/>
+    	      </span>
+    	    </div>
+    	    <div class="nameAndSign">
+    	      <p class="sp_name">徐欣</p>
+    	      <p class="sp_sign">这个人很忙，还没有写个人的签名！</p>
+    	    </div>
+    	    <div class="sp_sxinfocus">
+    	      <div class="sp_sxin" ng-class='{"active": issxin}' ng-click='clickSixin()'>私信</div>
+            <div class="sp_focus" ng-class='{"active": issguan}' ng-click='clickGuan()'>关注</div>
+    	    </div>
+    	  </div>
+    	</div>
+    	<div class="spFooterWrapper">
+    	  <p class="spFooterTitle">Ta的动态</p>
+    	  <div class="spFooterCon">
+    	    <div class="itemWrapper" ng-repeat="item in [1,2,3]" ng-click="detailAction(item)">
+            <div class="itemWrapperContent">
+              <div class="focusLeft">
+                <span class="ImgWrapper" ng-click='goSinglePage()'>
+                    <img ng-src="../../images/tempImages/head.jpg" alt="" />
+                </span>
+              </div>
+              <div class="focusRight">
+                <div class="pInfo">
+                  <div class="pNameW">
+                    <p class="pname">徐欣</p>
+                    <p class="ptime">10-16 14:21</p>
+                  </div>
+                  <div class="pPraise">
+                    <span class="pPraiseNum">12w+</span>
+                    <span class="pPraiseFinger" ng-click='toPraise()' ng-class='{"active": isPraised}'></span>
+                  </div>
+                </div>
+                <div class="pInfoCon">
+                  <p class="pInfoConn">这是一条热门评论这是一条热门评论论这是一条热门评论这是一条热门评论这是一条热门评论是一条热门评论这是一条热门评论</p>
+                  <div class="praisedComment">
+                    <div class="praisedCommentWrapper">
+                      <p class="pcwCon"><span class="oname">华仔：</span>二十多年来，A股一直都是散户市，至今都没</p>
+                    </div>
+                    <div class="bookComment">
+                      <div class="bookCommentImg">
+                        <img ng-src="../../images/tempImages/book4.jpg" alt="" />
+                      </div>
+                      <div class="bCommentInfo">
+                        <p class="bShortInfo">健康来源与生活</p>
+                        <p class="bShortAuthor">张晓晓</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    	  </div>
+    	</div>
+    </div>
+  </ion-content>
+</ion-view>

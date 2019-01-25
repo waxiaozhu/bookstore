@@ -1,0 +1,36 @@
+<ion-view ios-view view-title='书库' class='store' hide-tabs='false' ios-banner-fit>
+  <ion-header-bar class='barHeader' hide-tabs="true">
+    <div class="headerSearch">
+      <div class="searchTips" ng-click='goSearch()'>
+        <span class="searchPoint"></span>
+        <span class="searchInfo">搜搜你想看的书</span>
+      </div>
+    </div>
+  </ion-header-bar>
+  <div class="bar bar-subheader">
+      <div class="subheaderWrapper">
+         <span ng-repeat='item in navList track by $index' class="goodbook" ng-class='{"active": $index == selectIndex}' ng-click='change($index,$event)'>
+           {{item.name}}
+           <span class="activeLine" ng-class='{"active": $index == selectIndex}'></span>
+         </span>
+      </div>
+  </div>  
+  <ion-content class='storeWrapper has-subheader' has-bouncing="true" scroll='true' scrollbar-y="true" overflow-scroll="true">
+    <ion-slide-box on-slide-changed="slideHasChanged($index)" active-slide="0" delegate-handle="delegateStoreHandler" show-pager="false">
+      <ion-slide ng-repeat="item in navList track by $index" class='singleSlider'>
+        <div class="swStore" ng-repeat='item in [1,2,3,4,5,6,7] track by $index'>
+          <div class="swLeftL">
+            <img src="../../images/tempImages/cat.jpg" alt=""/>
+          </div>
+          <div class='swRightR'>
+            <p class="mainTTitle">游戏改变世界</p>
+            <div class="maintext" book-num num='2'>              
+                            的康师傅了的顺口溜范德萨发肯定是了浮傅了的顺口溜范德萨发肯定是了浮傅了的顺口溜范德萨发肯定是了浮傅了的顺口溜范德萨发肯定是了浮傅了的顺口溜范德萨发肯定是了浮点数发了多少开发类似的符断食疗法肯定是浮点数符断食疗法肯定是了发了多少符的是           
+            </div>
+            <p class="mainTAuthor">张云雷</p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>

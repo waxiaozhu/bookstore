@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rm75m7');
+  src:  url('fonts/icomoon.eot?rm75m7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rm75m7') format('truetype'),
+    url('fonts/icomoon.woff?rm75m7') format('woff'),
+    url('fonts/icomoon.svg?rm75m7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-booksoff:before {
+  content: "\e900";
+  color: #a8a7ad;
+}
+.icon-bookson:before {
+  content: "\e901";
+  color: #5ea750;
+}
+.icon-dynamicoff:before {
+  content: "\e902";
+  color: #a8a7ad;
+}
+.icon-dynamicon:before {
+  content: "\e903";
+  color: #5ea750;
+}
+.icon-mineoff:before {
+  content: "\e904";
+  color: #a8a7ad;
+}
+.icon-mineon:before {
+  content: "\e905";
+  color: #5ea750;
+}
+.icon-recommandoff:before {
+  content: "\e906";
+  color: #a8a7ad;
+}
+.icon-recommandon:before {
+  content: "\e907";
+  color: #5ea750;
+}
+
+
+
+.slide-in-right {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(100%);
+}
+
+.slide-in-right.ng-enter, .slide-in-right>.ng-enter {
+  -webkit-transition: all cubic-bezier(0.1,0.7,0.1,1) 400ms;
+  transition: all cubic-bezier(0.1,0.7,0.1,1) 400ms;
+}
+
+.slide-in-right.ng-enter-active, .slide-in-right > .ng-enter-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.slide-in-right.ng-leave, .slide-in-right > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.slide-in-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.slide-in-left.ng-enter, .slide-in-left > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1,0.7,0.1,1) 400ms;
+  transition: all cubic-bezier(0.1,0.7,0.1,1) 400ms;
+}
+
+/* 第二种字体 */
+@font-face {
+  font-family: 'icomoon2';
+  src:  url('fonts2/icomoon.eot?wal32b');
+  src:  url('fonts2/icomoon.eot?wal32b#iefix') format('embedded-opentype'),
+    url('fonts2/icomoon.ttf?wal32b') format('truetype'),
+    url('fonts2/icomoon.woff?wal32b') format('woff'),
+    url('fonts2/icomoon.svg?wal32b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-commentbookoff:before {
+  content: "\e900";
+  color: #a8a7ad;
+}
+.icon-commentbookon:before {
+  content: "\e901";
+  color: #5ea750;
+}
+.icon-elebookoff:before {
+  content: "\e902";
+  color: #a8a7ad;
+}
+.icon-elebookon:before {
+  content: "\e903";
+  color: #5ea750;
+}
+.icon-infooff:before {
+  content: "\e904";
+  color: #a8a7ad;
+}
+.icon-infoon:before {
+  content: "\e905";
+  color: #5ea750;
+}
